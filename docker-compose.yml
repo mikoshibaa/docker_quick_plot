@@ -1,0 +1,8 @@
+version: '3.0'
+services:
+  plotter:
+    build: ./service_plotter
+    volumes:
+      - ./service_plotter:/home
+    tty: true
+    container_name: con_plotter
